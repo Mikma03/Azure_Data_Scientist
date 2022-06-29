@@ -1,0 +1,11 @@
+.venv
+.ipynb_aml_checkpoints
+*.amltmp 
+*.amltemp
+.config
+*automl.log
+.config
+.azureml
+outputs
+explanation
+.vscode
