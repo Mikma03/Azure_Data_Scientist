@@ -8,6 +8,8 @@
 - [Paths: Microsoft Certified: Azure Data Scientist Associate](#paths-microsoft-certified-azure-data-scientist-associate)
 - [Microsoft Certified: Azure Data Scientist Associate (DP-100) Study Guide](#microsoft-certified-azure-data-scientist-associate-dp-100-study-guide)
 - [Azure Machine Learning Exercises](#azure-machine-learning-exercises)
+  - [Designing and Implementing a Data Science Solution on Azure](#designing-and-implementing-a-data-science-solution-on-azure)
+  - [Build and operate machine learning solutions with Azure Databricks](#build-and-operate-machine-learning-solutions-with-azure-databricks)
 - [Dedicated collection: Microsoft Certified: Azure Data Scientist Associate](#dedicated-collection-microsoft-certified-azure-data-scientist-associate)
   - [Link to full list of resources from Microsoft](#link-to-full-list-of-resources-from-microsoft)
   - [Module 1](#module-1)
@@ -100,7 +102,7 @@
       - [Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline](#execute-existing-ssis-packages-in-azure-data-factory-or-azure-synapse-pipeline)
       - [Operationalize your Azure Data Factory or Azure Synapse Pipeline](#operationalize-your-azure-data-factory-or-azure-synapse-pipeline)
 - [Udemy course](#udemy-course)
-- [Azure data scientist - book](#azure-data-scientist---book)
+- [Azure data science - books](#azure-data-science---books)
 - [Azure SDK for Python](#azure-sdk-for-python)
 
 <!-- /TOC -->
@@ -148,10 +150,21 @@ The Microsoft Certified: Azure Data Scientist Associate certification enables yo
 
 This repository contains the hands-on lab exercises for Microsoft course DP-100 Designing and Implementing a Data Science Solution on Azure and the equivalent self-paced modules on Microsoft Learn. The exercises are designed to accompany the learning materials and enable you to practice using the technologies they describe.
 
+## Designing and Implementing a Data Science Solution on Azure
+
+- https://docs.microsoft.com/pl-pl/learn/certifications/courses/dp-100t01
+
 - https://microsoftlearning.github.io/mslearn-dp100/
 
 GitHub repo for above exercises
 - https://github.com/MicrosoftLearning/mslearn-dp100
+
+## Build and operate machine learning solutions with Azure Databricks
+
+- https://docs.microsoft.com/en-us/learn/paths/build-operate-machine-learning-solutions-azure-databricks/?WT.mc_id=AI-MVP-5004069
+
+- https://microsoftlearning.github.io/dp-090-databricks-ml/
+
 
 # Dedicated collection: Microsoft Certified: Azure Data Scientist Associate
 
@@ -360,24 +373,20 @@ GitHub repo for above exercises
 
 #### Operationalize your Azure Data Factory or Azure Synapse Pipeline
 
-
-
-
-
-
-
-
-
-
-
-
 # Udemy course
 
 - https://www.udemy.com/course/machine-learning-using-azureml/
 
-# Azure data scientist - book
+# Azure data science - books
 
-- https://learning.oreilly.com/library/view/azure-data-scientist/9781800565005/
+- Data Science Solutions on Azure
+  - https://learning.oreilly.com/library/view/data-science-solutions/9781484264058/
+
+- Azure Data Scientist Associate Certification Guide
+  - https://learning.oreilly.com/library/view/azure-data-scientist/9781800565005/
+
+- Hands-On Edge Analytics with Azure IoT
+  - https://learning.oreilly.com/library/view/hands-on-edge-analytics/9781838829902/
 
 # Azure SDK for Python
 
