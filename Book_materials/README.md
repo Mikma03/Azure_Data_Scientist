@@ -1,65 +1,207 @@
-# Azure Data Scientist Associate Certification Guide	
 
-<a href="https://www.packtpub.com/product/azure-data-scientist-associate-certification-guide/9781800565005"><img src="https://static.packt-cdn.com/products/9781800565005/cover/smaller" alt="Azure Data Scientist Associate Certification Guide" height="256px" align="right"></a>
+# Azure Data Scientist Associate Certification Guide
 
-This is the code repository for [Azure Data Scientist Associate Certification Guide](https://www.packtpub.com/product/azure-data-scientist-associate-certification-guide/9781800565005), published by Packt.
-
-**A hands-on guide to machine learning in Azure and passing the Microsoft Certified DP-100 exam**
-
-## What is this book about?
-The Azure Data Scientist Associate Certification Guide helps you acquire practical knowledge for machine learning experimentation on Azure. It covers everything you need to pass the DP-100 exam and become a certified Azure Data Scientist Associate.
-
-This book covers the following exciting features: 
-* Create a working environment for data science workloads on Azure
-* Run data experiments using Azure Machine Learning services
-* Create training and inference pipelines using the designer or code
-* Discover the best model for your dataset using Automated ML
-* Use hyperparameter tuning to optimize trained models
-
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800565003) today!
-
-<a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
-alt="https://www.packtpub.com/" border="5" /></a>
+- GitHub repo for the book
+  - https://github.com/PacktPublishing/Azure-Data-Scientist-Associate-Certification-Guide
 
 
-## Instructions and Navigations
-All of the code is organized into folders. For example, Chapter02.
-
-The code will look like the following:
-```
-from azureml.train.hyperdrive import GridParameterSampling
-from azureml.train.hyperdrive import choice
-param_sampling = GridParameterSampling( {
-	"a": choice(0.01, 0.5),
-	"b": choice(10, 100)
-     }
-)
-```
-
-**Following is what you need for this book:**
-This book is for developers who want to infuse their applications with AI capabilities and data scientists looking to scale their machine learning experiments in the Azure cloud. Basic knowledge of Python is needed to follow the code samples used in the book. Some experience in training machine learning models in Python using common frameworks like scikit-learn will help you understand the content more easily.
-
-With the following software and hardware list you can run all code files present in the book (Chapter 1-12).
-
-### Software and Hardware List
-
-| Chapter  | Software required                   | OS required                        |
-| -------- | ------------------------------------| -----------------------------------|
-| 1        | Azure portal                    | Windows, Mac OS X, and Linux (Any) |
-| 2        | Azure Machine Learning Studio            | Windows, Mac OS X, and Linux (Any) |
-
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781800565005_ColorImages.pdf).
-
-### Related products
-* Cloud Analytics with Microsoft Azure [[Packt]](https://www.packtpub.com/product/cloud-analytics-with-microsoft-azure/9781839216404) [[Amazon]](https://www.amazon.com/dp/1839216409)
-
-* Cloud Scale Analytics with Azure Data Services [[Packt]](https://www.packtpub.com/product/cloud-scale-analytics-with-azure-data-services/9781800562936) [[Amazon]](https://www.amazon.com/dp/1800562934)
-
-## Get to Know the Authors
-**Andreas Botsikas**
-is an experienced advisor working in the software industry. He has worked in the finance sector, leading highly efficient DevOps teams, and architecting and building high-volume transactional systems. He then traveled the world, building AI-infused solutions with a group of engineers and data scientists. Currently, he works as a trusted advisor for customers onboarding into Azure, de-risking and accelerating their cloud journey. He is a strong engineering professional with a Doctor of Philosophy (Ph.D.) in resource optimization with artificial intelligence from the National Technical University of Athens.
-
-**Michael Hlobil**
-is an experienced architect focused on quickly understanding customers' business needs, with over 25 years of experience in IT pitfalls and successful projects, and is dedicated to creating solutions based on the Microsoft Platform. He has an MBA in Computer Science and Economics (from the Technical University and the University of Vienna) and an MSc (from the ESBA) in Systemic Coaching. He was working on advanced analytics projects in the last decade, including massive parallel systems and Machine Learning systems. He enjoys working with customers and supporting the journey to the cloud.
+# TOC
 
 
+# Chapter 1
+
+- An Overview Of Modern Data Science
+  - The evolution of data science
+  - Working on a data science project
+  - Show More Items
+  - Using Spark in data science
+  - Adopting the DevOps mindset
+  - Summary
+  - Further reading
+
+# CHapter 2
+- Deploying Azure Machine Learning Workspace Resources
+queue
+  - Technical requirements
+  - Deploying Azure ML through the portal
+    - Using the deployment wizard
+  - Deploying Azure ML via the CLI
+    - Deploying Azure Cloud Shell
+    - Using the Azure CLI
+    - Installing the Azure ML CLI extension
+    - Deploying Azure ML using the az ml command
+    - Cleaning up the CLI resource group
+  - Alternative ways to deploy an Azure ML workspace
+  - Exploring the deployed Azure resources
+    - Understanding Role-Based Access Control (RBAC)
+    - RBAC inheritance
+    - Creating custom roles
+    - Assigning roles in the Azure ML workspace
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 3
+
+- Azure Machine Learning Studio Components
+  - Technical requirements
+  - Interacting with the Azure ML resource
+  - Exploring the Azure ML Studio experience
+  - Authoring experiments within Azure ML Studio
+  - Tracking data science assets in Azure ML Studio
+  - Managing infrastructure resources in Azure ML Studio
+  - Summary
+
+
+# Chapter 4
+
+- Configuring The Workspace
+  - Technical requirements
+  - Provisioning compute resources
+    - Compute instances
+    - Compute clusters
+    - Inference clusters
+    - Attached compute
+  - Connecting to datastores
+    - Types of datastores
+    - Datastore security considerations
+    - Working with datasets
+  - Registering datasets
+  - Exploring the dataset
+  - Data drift detection
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 5
+
+- Letting The Machines Do The Model Training
+  - Technical requirements
+  - Configuring an AutoML experiment
+    - Registering the dataset
+    - Returning to the AutoML wizard
+  - Monitoring the execution of the experiment
+  - Deploying the best model as a web service
+    - Understanding the deployment of the model
+    - Cleaning up the model deployment
+  - Summary
+  - Question
+  - Further reading
+
+
+# Chapter 6
+
+- Visual Model Training And Publishing
+  - Technical requirements
+  - Overview of the designer
+    - The authoring screen/view
+    - Understanding the asset library
+    - Exploring the asset's inputs and outputs
+  - Building the pipeline with the designer
+    - Acquiring the data
+    - Preparing the data and training the model
+    - Executing the training pipeline
+  - Creating a batch and real-time inference pipeline
+    - Creating a batch pipeline
+    - Creating a real-time pipeline
+  - Deploying a real-time inference pipeline
+  - Summary
+  - Question
+  - Further reading
+
+
+# Chapter 7
+
+- The AzureML Python SDK
+  - Technical requirements
+  - Overview of the Python SDK
+  - Working in AzureML notebooks
+  - Basic coding with the AzureML SDK
+    - Authenticating from your device
+    - Working with compute targets
+    - Defining datastores
+    - Working with datasets
+  - Working with the AzureML CLI extension
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 8: 
+
+- Experimenting With Python Code
+  - Technical requirements
+  - Training a simple sklearn model within notebooks
+  - Tracking metrics in Experiments
+    - Tracking model evolution
+    - Using MLflow to track Experiments
+  - Scaling the training process with compute clusters
+    - Exploring the outputs and logs of a run
+    - Understanding execution environments
+    - Training the diabetes model on a compute cluster
+    - Utilizing more than a single compute node during model training
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 9
+
+- Optimizing The ML Model
+  - Technical requirements
+  - Hyperparameter tuning using HyperDrive
+    - Using the early termination policy
+  - Running AutoML experiments with code
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 10
+
+- Understanding Model Results queue
+  - Technical requirements
+  - Creating responsible machine learning models
+  - Interpreting the predictions of the model
+    - Training a loans approval model
+    - Using the tabular explainer
+    - Understanding the tabular data interpretation techniques
+    - Reviewing the interpretation results
+  - Analyzing model errors
+  - Detecting potential model fairness issues
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 11
+
+- Working With Pipelines queue
+  - Technical requirements
+  - Understanding AzureML pipelines
+  - Authoring a pipeline
+    - Troubleshooting code issues
+  - Publishing a pipeline to expose it as an endpoint
+  - Scheduling a recurring pipeline
+  - Summary
+  - Questions
+  - Further reading
+
+
+# Chapter 12
+
+- Operationalizing Models With Code
+  - Technical requirements
+  - Understanding the various deployment options
+  - Registering models in the workspace
+  - Deploying real-time endpoints
+    - Understanding the model deployment options
+    - Profiling the model's resource requirements
+    - Monitoring with Application Insights
+    - Integrating with third-party applications
+  - Creating a batch inference pipeline
+  - Summary
+  - Questions
+  - Further reading
